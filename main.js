@@ -3,7 +3,8 @@ const navLinks = document.querySelector('.nav-links');
 if (menuButton) {
   menuButton.addEventListener('click', () => {
     navLinks.classList.toggle('show');
-  });
+    menuButton.textContent = navLinks.classList.contains('show') ? '✖' : '≡';
+  });  
 }
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   anchor.addEventListener('click', function(e) {
@@ -53,3 +54,10 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 });
+
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('service-worker.js')
+    .then(() => console.log("✔ Service Worker registrado"))
+    .catch(err => console.error("❌ Error al registrar el SW:", err));
+}
+

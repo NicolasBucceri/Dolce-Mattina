@@ -1,0 +1,22 @@
+{
+    "name": "Dolce Mattina",
+    "short_name": "Dolce",
+    "start_url": "./index.html",
+    "display": "standalone",
+    "background_color": "#1f1f1f",
+    "theme_color": "#d4af37",
+    "orientation": "portrait",
+    "icons": [
+      {
+        "src": "Img/192x192.png",
+        "sizes": "192x192",
+        "type": "image/png"
+      },
+      {
+        "src": "Img/512x512.png",
+        "sizes": "512x512",
+        "type": "image/png"
+      }
+    ]
+  }
+  
