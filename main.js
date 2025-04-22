@@ -60,4 +60,37 @@ if ('serviceWorker' in navigator) {
     .then(() => console.log("✔ Service Worker registrado"))
     .catch(err => console.error("❌ Error al registrar el SW:", err));
 }
+document.addEventListener("DOMContentLoaded", function () {
+  tsParticles.load("tsparticles", {
+    fullScreen: {
+      enable: true,
+      zIndex: 0
+    },
+    background: {
+      color: { value: "transparent" }
+    },
+    particles: {
+      number: { value: 80 },
+      color: { value: "#d4af37" }, // dorado
+      shape: { type: "circle" },
+      opacity: { value: 0.6, random: true },
+      size: { value: 2, random: true },
+      move: {
+        enable: true,
+        speed: 0.6,
+        direction: "none",
+        random: true,
+        outModes: { default: "out" }
+      }
+    },
+    interactivity: {
+      events: {
+        onHover: { enable: false },
+        onClick: { enable: false }
+      }
+    },
+    detectRetina: true
+  });
+});
+
 
