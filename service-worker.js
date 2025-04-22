@@ -19,6 +19,12 @@ self.addEventListener('install', event => {
           './Img/img9.jpg',
           './Img/img10.jpg',
           './Img/img11.jpg',
+          './Img/img12.jpg',
+          './Img/img13.jpg',
+          './Img/img14.jpg',
+          './Img/img15.jpg',
+          './Img/img16.jpg',
+          './Img/img17.jpg',
         ]);
       })
     );
